@@ -6,7 +6,7 @@ function calculateBmi() {
   let bmi = weight / (heightMeters * heightMeters);
   bmi = Math.round(bmi);
   let result = document.getElementById("result");
-  let info = `<div class="information"> To get more information about your results <a href="second.html">Click here</a> </div>`;
+  let info = `<div class="information"> To get more information about your results <a href="https://www.nhsinform.scot/healthy-living/food-and-nutrition/healthy-eating-and-weight-loss/body-mass-index-bmi#:~:text=BMI%20ranges&text=under%2018.5%20%E2%80%93%20This%20is%20described,This%20is%20described%20as%20obesity">Click here</a> </div>`;
 
   if (bmi < 18.5) {
     result.innerHTML = `<BMI : ${bmi}  </br> Underweight ${info}`;
